@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.header-link {
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.87);
+  text-decoration: none;
+}
+
+.header-link:hover {
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+#apps-icon {
+  fill: #5f6368;
+  opacity: 1;
+}
+
+
