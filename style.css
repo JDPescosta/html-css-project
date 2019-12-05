@@ -43,6 +43,7 @@ main {
   align-items: center;
   margin-top: 28px;
   width: 62%;
+  padding: 0 18px 0 18px;
 }
 
 #favourites {
@@ -57,6 +58,24 @@ main {
 }
 
 #searchbox input {
-  width: 100%; 
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 15.66666px;
+  width: 100%;
   height: 80%;
+  border: none;
+  padding-left: 10px;
 }
+
+#searchbox input:focus {
+  outline: none;
+}
+
+.searchbox-icons {
+  width: 24px;
+  height: 24px; 
+}
+
+#searchbox svg {
+  fill: rgb(117, 117, 117)
+}
+
