@@ -47,8 +47,6 @@ main {
   padding: 0 18px 0 18px;
 }
 
-
-
 #searchbox input {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 15.66666px;
@@ -81,29 +79,21 @@ main {
 .fav-button {
   padding: 15px;
   margin: 12px 12px 32px 12px;
-  
 }
 
-.fav-button:hover{
-
-background-color: rgb(241, 243, 244);
-border-radius: 5px;
-
-
+.fav-button:hover {
+  background-color: rgb(241, 243, 244);
+  border-radius: 5px;
 }
 
 .fav-button:hover .fav-image {
-
-  background-color: rgba(32, 33, 36, .06);
-
+  background-color: rgba(32, 33, 36, 0.06);
 }
-
 
 .fav-button a {
   text-decoration: none;
   font-size: 12px;
   color: rgb(60, 60, 60);
-  
 }
 
 .fav-image {
@@ -128,36 +118,90 @@ border-radius: 5px;
   flex-wrap: nowrap;
 }
 
+#customise-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  border-radius: 22px;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  background-color: white;
+  border: none;
+  padding: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  fill: rgb(26, 115, 232);
+  color: rgb(26, 115, 232);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+#customise-button svg {
+  width: 17px;
+  padding-right: 7px;
+}
+
+
+#customise-button:hover {
+  background-color: rgb(232, 240, 254);
+}
 
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 72%;
+  margin-left: 15%;
 }
 
 
-@media screen and (max-height: 600px) {
-  footer {
-    display:none;
-  }
-}
 
 #footer-text {
-    border: solid 1px rgb(218, 220, 224);
-    border-radius: 22px;
-    padding: 9px;
-    padding-left:11px;
-    padding-right:11px;
-    color: rgba(138,138,138,1);
-    font-size: 13px;
+  border: solid 1px rgb(218, 220, 224);
+  border-radius: 22px;
+  padding: 9px;
+  padding-left: 11px;
+  padding-right: 11px;
+  color: rgba(138, 138, 138, 1);
+  font-size: 13px;
+  background-color: white;
 }
 
 #footer-text a {
-
   text-decoration: none;
   color: rgb(17, 85, 204);
+}
 
+@media screen and (max-width: 600px) {
+
+  #customise-button {
+    padding: 1px 5px;
+  }
+
+  #customise-button span {
+    display: none;
+  }
+  #customise-button svg {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  footer {
+    display: none;
+
+  }
 }
