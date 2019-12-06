@@ -127,3 +127,37 @@ border-radius: 5px;
   align-items: center;
   flex-wrap: nowrap;
 }
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media screen and (max-height: 600px) {
+  footer {
+    display:none;
+  }
+}
+
+#footer-text {
+    border: solid 1px rgb(218, 220, 224);
+    border-radius: 22px;
+    padding: 9px;
+    padding-left:11px;
+    padding-right:11px;
+    color: rgba(138,138,138,1);
+    font-size: 13px;
+}
+
+#footer-text a {
+
+  text-decoration: none;
+  color: rgb(17, 85, 204);
+
+}
