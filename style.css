@@ -1,3 +1,6 @@
+/*This is the first webpage I've ever created. It ain't perfect, but its mine*/
+
+
 header {
   display: flex;
   justify-content: flex-end;
@@ -9,6 +12,8 @@ body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
+
+/*The class defining header link properties and values*/
 .header-link {
   display: flex;
   align-items: center;
@@ -35,6 +40,8 @@ main {
   align-items: center;
 }
 
+
+/*The Id of the searchbox container and its children*/
 #searchbox {
   border-radius: 22px;
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
@@ -70,6 +77,9 @@ main {
   fill: rgba(117, 117, 117, 1);
 }
 
+
+/*The ID of the favourites container
+(the stuff under the searchbox) and its children*/
 #favourites {
   margin-top: 28px;
   display: flex;
@@ -100,10 +110,10 @@ main {
 .fav-image {
   background-color: rgb(241, 243, 244);
   padding: 13px;
-  border-radius: 100%;
   width: 24px;
   height: 24px;
   margin-bottom: 15px;
+  border-radius: 100%;
 }
 
 .fav-image img {
@@ -119,24 +129,26 @@ main {
   flex-wrap: nowrap;
 }
 
+/*The ID of the customise button container and its children
+(found in the lower right-hand corner of the page)*/
 #customise-button {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   bottom: 0;
   right: 0;
   margin-bottom: 10px;
   margin-right: 20px;
-  border-radius: 22px;
-  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
-  background-color: white;
-  border: none;
   padding: 4px;
   padding-left: 10px;
   padding-right: 10px;
+  border-radius: 22px;
+  border: none;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  background-color: white;
   fill: rgb(26, 115, 232);
   color: rgb(26, 115, 232);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 14px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   cursor: pointer;
@@ -152,6 +164,7 @@ main {
   background-color: rgb(232, 240, 254);
 }
 
+/*The Id of the footer container and its children*/
 footer {
   display: flex;
   align-items: center;
@@ -171,8 +184,8 @@ footer {
   padding-left: 11px;
   padding-right: 11px;
   color: rgba(138, 138, 138, 1);
-  font-size: 13px;
   background-color: white;
+  font-size: 13px;
 }
 
 #footer-text a {
@@ -180,6 +193,11 @@ footer {
   color: rgb(17, 85, 204);
 }
 
+
+/*the media queries*/
+
+
+/*Customise button queries*/
 @media screen and (max-width: 600px) {
 
   #customise-button {
@@ -193,6 +211,9 @@ footer {
     padding-right: 0;
   }
 }
+
+
+/*Footer queries*/
 
 @media screen and (max-height: 600px) {
   footer {
